@@ -25,14 +25,14 @@ h1{
   width: 20%;
 }
 #aboutAll{
-margin-left: 600px;
-margin-top: -270px;
-height: 220px;
-width: 400px;
-padding: 10px;
-border: solid 4px black;
-box-shadow: 10px 10px 5px grey;
-border-radius: 10%;
+  margin-left: 50%;
+  margin-top: -270px;
+  height: 220px;
+  width: 400px;
+  padding: 10px;
+  border: solid 4px black;
+  box-shadow: 10px 10px 5px grey;
+  border-radius: 10%;
 }
 #aboutMe{
   font-size:30px;
@@ -52,11 +52,14 @@ img{
   margin-top: 20px;
 }
 .SM{
-    margin-left: 570px;
-    margin-right: 200px;
+    margin-left: 45%;
+    /*margin-right: 200px;*/
 }
 #linkedin{
   margin-left: -135px;
+}
+#twitter{
+  /*margin-left: 265px;*/
 }
 .skills{
   margin-top: 50px;
