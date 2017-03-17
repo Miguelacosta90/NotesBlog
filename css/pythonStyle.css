@@ -1,0 +1,32 @@
+*{
+  padding: 0;
+  box-sizing: border-box;
+}
+#wrapper{
+  font-size: 20px;
+}
+#header{
+  font-size: 30px;
+  margin-left: 30%;
+}
+#loop{
+  background-color: yellow;
+  margin-right: 50%;
+  margin-left: 20%;
+}
+img{
+  margin-left: 35%;
+}
+ul{
+  margin-left: 5%;
+}
+body{
+  padding: 10px;
+  margin-right: 10px;
+}
+table, td{
+  border: 1px solid #DDDDDD;
+  padding: 3px !important;
+  vertical-align: top;
+
+}

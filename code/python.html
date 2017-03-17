@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/css/pythonStyle.css">
+  <title>Python Notes</title>
+</head>
+<body>
+  <div id="header"><h1>Python notes</h1></div>
+  <img src="/img/python.png">
+  <div id="wrapper">
+  <h1>Data types</h1>
+    <ul>
+      <li><b>Boolean Values</b>: Boolean Values assesses the Truth value of something. it has only two values: <b>True and False</b>. </li>
+        <br>
+      <li><b># Numbers #</b>: int (whole numbers), floating point numbers (commonly known as decimal numbers), and complex numbers.</li>
+        <br>
+      <li><b>Strings</b>: String is a text literal, most pages on the Web work with strings often</li>
+
+    </ul>
+  <h1>Composite types</h1>
+    <ul>
+      <li><b>Tuples</b>: A Tuple is a(n) Array that can not be changed after you make it or in other words: A Data type that is <b>IMMUTABLE</b> ( can't be modified after its created ) <br> and can hold a group of values.Tuples can also contain mixed data types.</li>
+        <br>
+      <li><b>List</b>: in Python List is a(n) array or in other words: A type of data that is mutable and can hold a group of values. Usually meant to store a collection of related data. </li>
+        <br>
+      <li><b>Dictionaries</b>: A group of key-value pairs. Dictionary elements are indexed by unique keys which are used to access values</li>
+        <br>
+      <li><b>Indentation & Line-Endings</b>: One of the most important aspects of Python is indentation. Python has no brackets, braces, or keywords to indicate the start and end of certain code blocks such as functions, if statements, and loops. The only delimiter is the colon (:) and the indentation of the code itself. You'll see that indenting starts a new code block and un-indenting ends that block. Don't worry if these codes don't make sense right now; we'll go over function and i f- statements later. Just take note of how the indentation looks.</li>
+    </ul>
+    <h1>Strings</h1>
+    <ul>
+      <li><b>Strings</b>: are any sequence of characters (letters, numerals, ~($/}\#, etc.) enclosed in single or double quotes.</li>
+        <br>
+      <li><b>Printing Strings using Variables</b>: There are multiple ways that you can print a string containing data from variables.  The first is by adding a comma after the string, followed by the variable. Note that the comma is outside the closing quotation mark of the string. Print inserts a space between elements separated by a comma. The second is by concatenating the contents into a new string, with the help of +.</li>
+        <br>
+      <li><b>.format()</b>: you can use curly brackets - {} - and the string .format() method to inject variables into your string - this is known as string interpolation.</li>
+      <h3>Built-In String Methods</h3>
+      <li><b>miguel.capitalize()</b>: Create a copy of the string with only its first character capitalized.</li>
+        <br>
+      <li><b>hello MIGUEL.lower()</b>: Return a copy of string converted to all-lowercase.</li>
+        <br>
+      <li><b>miguel ACOSTA.swapcase()</b>: Return a copy of a string with uppercase characters converted to lowercase, and vice versa.</li>
+        <br>
+      <li><b>.upper()</b>: Return a copy of a string converted to all uppercase.</li>
+        <br>
+      <li><b>Miguel.find(substring)</b>: Determine if a specified string (in this example, 'el') occurs in a given string and returns the index or location of where the substring ('el') occurred from the string. If not found, it will return -1 as a result.</li>
+        <br>
+      <li><b>miguel.replace(old, new [, max])</b>: This method returns a copy of the string with all occurrences of substring old replaced by new. If the optional argument max is given, only the first number of times indicated in max will you have the substring old replaced.</li>
+        <br>
+      <h3>here is a link for the <a href="https://docs.python.org/2.6/library/string.html">Python Docs</a> on what you can do with Strings</h3>
+    </ul>
+    <h1>List</h1>
+    <ul>
+      <li><b>List</b>: also known as an array in other programming languages, is a data type that allows you to hold groups of values. Think of a list like a dresser with multiple drawers in which each drawer stores some information. Lists are created with values inside of square brackets [], where each value is separated by a comma. After a list is created, it can still be updated by adding values and/or by deleting values. An empty list is simply [ ]. In Python, the elements of a list do not have to be of the same data type. A list can be a mixture of any Python data types, including, tuples, strings, numeric, and even a list itself (a list within a list)</li>
+        <br>
+      <li><b>Accessing Values</b>: Back to the dresser analogy, imagine that each drawer is numbered starting with 0. Say the first drawer( index of 0) has 'documents' inside, the second drawer (index 1) has 'envelopes' inside, and so on. Each drawer holds a number, also known as the index (which serves as the unique address that points to each of our items inside the drawer). You can access the items in the drawer</li>
+        <br>
+      <li><b>Manipulating Lists</b>: these are some methods that we will use to manipulate lists</li>
+        <ul>
+          <li>list<b>.append</b>(new_element) - Appends a new item onto the end of the given list. You can pass any data type into this function.</li>
+            <br>
+          <li>list<b>.insert</b>(index, new_element) - Inserts a new item into the list at the given index. You can pass any data type into this function.</li>
+            <br>
+          <li>list<b>.remove</b>(element) - Remove the first item from the list whose value is provided. Errors if the element does not exist</li>
+            <br>
+          <li>list<b>.pop</b>(optional_index) - Remove the item at a given position; if the position is not given, it will remove the last entry from the list</li>
+            <br>
+          <li>list<b>.sort()</b> - Sorts the elements in a list in ascending order by numerical value, or alphabetically in the case of strings. Try sorting an array with mixed data types. What causes this behavior?</li>
+            <br>
+          <li><b>Slice</b> - Uses [ ] characters to return a copy of the list, constrained to the specified indices. The starting index and ending index should be separated by the ":" character.</li>
+        </ul>
+        <br>
+       <li><b>List Built-in Functions</b>: Below are some built-in functions that deal with lists. The following functions can also be applied to all sequences, including tuples and strings. What do we mean when we say sequence? Think of a sequence as anything over which we can iterate.</li>
+         <ul>
+           <li><b>len()</b> - Returns the number of items in a sequence</li>
+             <br>
+           <li><b>max()</b> - Returns the largest item in the sequence.</li>
+             <br>
+           <li><b>min()</b> - Returns the smallest item in the sequence. When comparing boolean to numbers, True == 1 and False == 0. Comparing items of differing types are quite uncommon, but if you ever do this, note that all numbers < all dictionaries < all lists < all strings < all tuples.   Again ask yourself what causes this behavior. How would you go about finding out?</li>
+             <br>
+           <li><b>any()</b> - Returns True if there exists any item in the sequence which is True.</li>
+             <br>
+           <li><b>all()</b> - Returns True if all items in the sequence are True.</li>
+         </ul>
+
+         <h3>These are just some of the things you can do to manipulate or extract information from a list. <a href="http://www.linuxtopia.org/online_books/programming_books/python_programming/python_ch14s07.html">Click here</a> to learn more about other built-in functions you can use with a list.</h3>
+
+    </ul>
+    <h1>Conditional Expressions</h1>
+    <ul>
+      <p>* Conditional statements or expressions in Python can be done using if (and else) just like in other programming languages. We use these conditional statements with logic operators to control the flow of our programs.</p>
+      <li><b>if, else & elif</b>:The if and if-else statements in Python are straightforward and are very much like the if statements in other languages. The only difference with Python's if statement is, when you have another condition, you write it using elif.</li>
+      <br>
+      <li><b>elif</b>: Elif is just like else if or elsif from other languages.</li>
+    </ul>
+    <h3>Comparison and Logic Operators</h3>
+  <table>
+    <tr>
+      <td>==</td>
+      <td>Checks if the value of two operands are equal or not, if yes then condition bec</td>
+      <td>(1 == 2) is not true. (1 == 1) is true.</td>
+    </tr>
+    <tr>
+      <td>!=</td>
+      <td>Checks if the value of two operands are equal or not, if values are not equal then condition becomes true.</td>
+      <td>(1 != 2) is true.</td>
+    </tr>
+    <tr>
+      <td><></td>
+      <td>Checks if the value of two operands are equal or not, if values are not equal then condition becomes true.</td>
+      <td>(1 <> 2) is true. This is similar to != operator.*</td>
+    </tr>
+    <tr>
+      <td>></td>
+      <td>Checks if the value of left operand is greater than the value of right operand, if yes then condition becomes true.</td>
+      <td>(1 > 2) is not true.</td>
+    </tr>
+    <tr>
+      <td><</td>
+      <td>	Checks if the value of left operand is less than the value of right operand, if yes then condition becomes true.</td>
+      <td>(1 < 2) is true.</td>
+    </tr>
+    <tr>
+      <td>>=</td>
+      <td>Checks if the value of left operand is greater than or equal to the value of right operand, if yes then condition becomes true.</td>
+      <td>(1 >= 2) is not true.</td>
+    </tr>
+    <tr>
+      <td><=</td>
+      <td>Checks if the value of left operand is less than or equal to the value of right operand, if yes then condition becomes true.</td>
+      <td>(1 <= 2) is true.</td>
+    </tr>
+    <tr>
+      <td>and</td>
+      <td>Checks each expression on the left and right. If both are true then this evaluates true. If either or both expressions are false then this is false</td>
+        <td>(1 <= 2 and 2 <= 3) is true,
+            <br>
+            (1 <= 2 and 2 >= 3) is false
+            <br>
+            (1 >= 2 and 2 >= 3) is false.
+        </td>
+    </tr>
+    <tr>
+      <td>or</td>
+      <td>Checks each expression on the left and right. If either of the expressions are true then this evaluates true. If both expressions are false then this is false.</td>
+      <td>(1 <= 2 or 2 >= 3) is true.
+        <br>
+          (1 <= 2 or 2 <= 3) is true.
+        <br>
+          (1 >= 2 or 2 >= 3) is false. </td>
+    </tr>
+    <tr>
+      <td>not</td>
+      <td>Reverses the true-false value of the operand</td>
+      <td>
+        not(true) is false.
+        <br>
+        not(false) is true.
+        <br>
+        not(1 >= 2) is true.
+        <br>
+        not(1 =< 2) is false.
+        <br>
+        not(1 <= 2 and 2 =< 3) is false.
+        <br>
+        not(1 >= 2 or 2 >= 3) is true.
+      </td>
+    </tr>
+  </table>
+  <p>*Note: != can also be written <>, but this is an obsolete usage kept for backwards compatibility only. New code should always use !=.  Documentation can be <a href="https://docs.python.org/2/library/stdtypes.html">found here.</a></p>
+  <h1>Loops</h1>
+  <p>Imagine that you are in 1st grade and you got in trouble in class for talking too much (it happened to me a lot of times). Your teacher asks you to write "I will not talk in class" 1,000 times. Yikes! If you had learned to program in kindergarten, you might have thought to write a program that uses a loop to do it for you!</p>
+  <h3>For Loops</h3>
+  <p>We use the for loop when we know how many times we have to repeat our code. You will mostly be using for loops in your programs, particularly in Python.</p>
+  <div id="loop">
+    <P>
+      for i in range(0,5)
+      <br>>>>>>>print "this is the loop ", i
+      <br>#this is how you print numbers in a for loop
+      <br>#the out put will loop like so
+      <ul>
+        <li>this is the loop 1 </li>
+        <li>this is the loop 2</li>
+        <li>this is the loop 3</li>
+        <li>this is the loop 4</li>
+        <li>this is the loop 5</li>
+      </ul>
+    </P>
+  </div> <!-- loop -->
+    <p>
+      Python's for statement iterates over the items of any sequence(list or string), in the order they appear in the sequence. In the above example, we iterated through the range from 0 to 5 (exclusive) and printed out a 'looping - ' item in the sequence. Notice how we use count as a counter/variable to refer to the current item in our loop.
+    </p>
+  </div><!--wrapper-->
+</body>
+</html>
