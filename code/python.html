@@ -233,11 +233,11 @@
          </ul>
        </div><!--loop-->
        <h3>loop control</h3>
+       <b>Break</b>
        <p>
          We were introduced to control flow in the previous tabs with if and else statements. Loops, breaks and continues are all a part of control flow as well. Control flow is the cornerstone of most programming languages The break statement exits the current loop prematurely, resuming execution at the first post-loop statement, just like the traditional break found in C or JavaScript.
           The most common use for the break is when some external condition is triggered, requiring a hasty exit from a loop. The break statement can be used in both while and for loop. When loops are nested, a break will only exit from the innermost loop.
        </p>
-          <b>Break</b>
          <div class="loop">
          <p>
            for Val in "String"
@@ -254,10 +254,11 @@
             <li>r</li>
           </ul>
         </div><!--loop-->
-        <p>
-           The continue statement returns the control to the beginning of the loop. The continue statement rejects -- or skips -- all the remaining statements in the current iteration of the loop, and continues normal execution at the top of the loop. The continue statement is very useful when you want to skip one or more loop iterations, but keep looping to the end.
-        </p>
         <b>Continue</b>
+        <p>
+           The continue statement returns the control to the beginning of the loop. The continue statement rejects -- or skips -- all the remaining statements in the current iteration of the loop,
+            and continues normal execution at the top of the loop. The continue statement is very useful when you want to skip one or more loop iterations, but keep looping to the end.
+        </p>
         <div class="loop">
         <p>
           for Val in "String"
@@ -277,6 +278,80 @@
            <li>g</li>
          </ul>
        </div><!--loop-->
+       <b>Pass</b>
+       <p>
+         The pass statement is used when a statement is required syntactically but you do not want any command or code to execute.
+         The pass statement is a null operation; nothing happens when it executes.
+         The pass is almost never seen in final production, but can be useful in places where your code has not been completed yet.
+       </p>
+        <div class="loop">
+          <p>
+            for val in my_string:
+            <br>
+            >>>>pass
+          </p>
+        </div><!--loop-->
+        <b>Else</b>
+        <p>
+          There are certain conditions that we give for every loop that we have, but what if
+          the condition was not met and we still would like to do something if that happens?
+          We can then use else. Yes, that is right, else in a loop.
+          Note that this else code section is only executed if the while loop runs normally and its conditional is false
+          (whether we never entered the while loop, or we did but eventually the conditional changed from true to false).
+          If instead our while loop is exited prematurely because of a break or return statement, then the else code section will never be executed.
+        </p>
+        <div class="else">
+          <p>
+            x = 3
+            <br>
+            y = x
+            <br>
+            while y > 0:
+            <br>
+            >>>print y
+            <br>
+            >>>y = y - 1
+            <br>
+            else:
+            <br>
+            >>>print "Final else statement"
+          </p>
+          <ul>
+            <li>3</li>
+            <li>2</li>
+            <li>1</li>
+            <li>Final else statement</li>
+          </ul>
+        </div> <!--else-->
+        <p>
+          else with if statement
+        </p>
+        <div class="else">
+          <p>
+            x = 3
+            <br>
+            y = x
+            <br>
+            while y > 0:
+            <br>
+            >>>print y
+            <br>
+            >>>y = y - 1
+            <br>
+            if y == 0
+            <br>
+              break
+            <br>
+            else:
+            <br>
+            >>>print "Final else statement"
+          </p>
+          <ul>
+            <li>3</li>
+            <li>2</li>
+            <li>1</li>
+          </ul>
+        </div><!--else-->
     </div><!--wrapper-->
 </body>
 </html>
