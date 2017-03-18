@@ -181,34 +181,102 @@
       <br>>>>>>>print "this is the loop ", i
       <br>#this is how you print numbers in a for loop
       <br>#the out put will loop like so
-    </P>
-      <ul>
-        <li>this is the loop 1 </li>
-        <li>this is the loop 2</li>
-        <li>this is the loop 3</li>
-        <li>this is the loop 4</li>
-        <li>this is the loop 5</li>
-      </ul>
-  </div> <!-- loop -->
-    <p>
-      Python's for statement iterates over the items of any sequence(list or string), in the order they appear in the sequence. In the above example, we iterated through the range from 0 to 5 (exclusive) and printed out a 'looping - ' item in the sequence. Notice how we use count as a counter/variable to refer to the current item in our loop.
-    </p>
-  </div><!--wrapper-->
-  <h3>Looping Through a List</h3>
-  <p>Often you'll find yourself wanting to loop through a list. Here's a quick example of how you do that. If we execute this program, you'll see each value in our list printed.</p>
-  <div class="loop">
-     #creat a new list
-     #remember lists an hold many data-types, even lists!
-     my_list = [4, "dog", 99, ["miguel","alex","list"],"HelloWorld"]
-     for element in my_list:
-     >>>>print element
-     <ul>
-       <li>4</li>
-       <li>dog</li>
-       <li>99</li>
-       <li>["miguel","alex","list"]</li>
-       <li>HelloWorld</li>
-     </ul>
-  </div><!--loop-->
+       </P>
+         <ul>
+           <li>this is the loop 1 </li>
+           <li>this is the loop 2</li>
+           <li>this is the loop 3</li>
+           <li>this is the loop 4</li>
+           <li>this is the loop 5</li>
+         </ul>
+     </div> <!-- loop -->
+       <p>
+         Python's for statement iterates over the items of any sequence(list or string), in the order they appear in the sequence. In the above example, we iterated through the range from 0 to 5 (exclusive) and printed out a 'looping - ' item in the sequence. Notice how we use count as a counter/variable to refer to the current item in our loop.
+       </p>
+     <h3>Looping Through a List</h3>
+     <p>Often you'll find yourself wanting to loop through a list. Here's a quick example of how you do that. If we execute this program, you'll see each value in our list printed.</p>
+     <div class="loop">
+       <p>
+        #creat a new list
+        <br>
+        #remember lists an hold many data-types, even lists!
+        <br>
+        my_list = [4, "dog", 99, ["miguel","alex","list"],"HelloWorld"]
+        <br>
+        for element in my_list:
+        <br>
+        >>>>print element
+       </p>
+        <ul>
+          <li>4</li>
+          <li>dog</li>
+          <li>99</li>
+          <li>["miguel","alex","list"]</li>
+          <li>HelloWorld</li>
+        </ul>
+     </div><!--loop-->
+     <h3>While Loops</h3>
+       <p><b>While loops</b> are offten used when we don't know how many times we have to repeat a block of code we know we have to do it until a certain condition is met.</p>
+       <div class="loop">
+         <p>
+             count = 0
+             while count < 5: #notice the colon!
+             <br>
+             >>print "looping - ", count
+         </p>
+         <ul>
+           <li>this is the loop 1 </li>
+           <li>this is the loop 2</li>
+           <li>this is the loop 3</li>
+           <li>this is the loop 4</li>
+           <li>this is the loop 5</li>
+         </ul>
+       </div><!--loop-->
+       <h3>loop control</h3>
+       <p>
+         We were introduced to control flow in the previous tabs with if and else statements. Loops, breaks and continues are all a part of control flow as well. Control flow is the cornerstone of most programming languages The break statement exits the current loop prematurely, resuming execution at the first post-loop statement, just like the traditional break found in C or JavaScript.
+          The most common use for the break is when some external condition is triggered, requiring a hasty exit from a loop. The break statement can be used in both while and for loop. When loops are nested, a break will only exit from the innermost loop.
+       </p>
+          <b>Break</b>
+         <div class="loop">
+         <p>
+           for Val in "String"
+           <br>
+           >>>if val == "i":
+           <br>
+           >>>>>break
+           <br>
+           >>>print (val)
+         </p>
+          <ul>
+            <li>s</li>
+            <li>t</li>
+            <li>r</li>
+          </ul>
+        </div><!--loop-->
+        <p>
+           The continue statement returns the control to the beginning of the loop. The continue statement rejects -- or skips -- all the remaining statements in the current iteration of the loop, and continues normal execution at the top of the loop. The continue statement is very useful when you want to skip one or more loop iterations, but keep looping to the end.
+        </p>
+        <b>Continue</b>
+        <div class="loop">
+        <p>
+          for Val in "String"
+          <br>
+          >>>if val == "i":
+          <br>
+          >>>>>continue
+          <br>
+          >>>print (val)
+        </p>
+         <ul>
+           <li>s</li>
+           <li>t</li>
+           <li>r</li>
+           <li>i</li>
+           <li>n</li>
+           <li>g</li>
+         </ul>
+       </div><!--loop-->
+    </div><!--wrapper-->
 </body>
 </html>
