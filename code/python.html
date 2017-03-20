@@ -359,6 +359,48 @@
           streamline the process. A function can optionally take in parameters, perform a series of instructions, and optionally return something
           afterwards. Here's an example:
         </p>
+        <h3>Functions in Python are known as "First Class"</h3>
+        <p>
+          Like most modern programming languages, <b>Functions in Python are First-Class Functions</b>. This means that they can basically go wherever they want!
+        </p>
+        <ul>
+          <li>Functions can be stored as standalone functions</li>
+          <li>Functions can be defined inside Classes/Instances (known as methods)</li>
+          <li>Functions can be passed as arguments to functions (known as callbacks)</li>
+          <li>Functions can be returned from functions (creating a closure)</li>
+          <li>Functions can be anonymous which are stored in variables/used only one time (known as lambdas)</li>
+        </ul>
+        <h3>Syntax</h3>
+        <p>
+          We'll focus on standalone functions to get you familiar with the different aspects of functions.
+        </p>
+        <p>
+          The def keyword signifies the declaration of a function. This indicates that the following code is
+          a function and assigns a name to that function, so we can call it later. Parameters are information
+          we input into a function, and appear inside the parenthesis that follow the function name.
+          We have declared a function with the def keyword, named it add, and it takes two inputs (parameters).
+          An important thing to know is that the above code does not actually invoke the function; it just declares
+          it. Once you've defined your function, we can execute it by invoking or calling it using () after the function
+          name. It is very important to remember the following: a functional call is equal to whatever that function returns.
+          Once invoked, a function can give us an output. Some functions take an input and some functions don't give us an output.
+          Even if no output is produced, the code inside the function can alter the program - this is called a side effect.
+          Based upon what we learned above, a function that doesn't return anything would produce no output!
+        </p>
+        <div class="loop">
+          def add(a,b):
+          <br>
+          >>>x = a + b
+          <br>
+          >>>return x
+          <br>
+          print add(3,5)  ####outpiut is 8
+        </div><!--loop-->
+        <h3>Function Parameters</h3>
+        <p>
+          We define the input of functions using parameters. Like we've seen before,
+          some functions do not have to take parameters.However, functions can optionally
+          have one or more parameters.
+        </p>
     </div><!--wrapper-->
 </body>
 </html>
