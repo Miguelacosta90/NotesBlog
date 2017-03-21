@@ -399,8 +399,76 @@
         <p>
           We define the input of functions using parameters. Like we've seen before,
           some functions do not have to take parameters.However, functions can optionally
-          have one or more parameters.
+          have one or more parameters.We've defined the say_hi function with one parameter
+          called name. Now, we can invoke this function by calling its name and passing
+          in the correct number of arguments: Wait, but what's the difference between a
+          parameter and an argument? These two words get mixed up a lot in programming.
+          In this example 'name' is a parameter while "Michael", "Andrew", and "Jay", are
+          arguments. We define parameters. We pass in arguments into functions.
         </p>
+        <div class="loop">
+          def sayHi(name):
+          <br>
+          >>>print "Hi " + name
+          <br>
+          sayHi("Miguel")  ### output will be "Hi Miguel"
+        </div>
+        <h3>Returning Values</h3>
+          <p>
+             So far none of our functions had any value that we could hold onto. In many cases,
+             we would want our function to return some sort of value that we can use later in
+             our program. Let's modify our original say_hi function and observe the differences:
+             Returning a value from a function allows us to store that value in a variable.
+             In this example, we invoked the say_hi function and set it to the greeting variable.
+             When we print greeting we see that it contains
+             the returned value of the say_hi function - "Hi'
+             Going back to our add function, recall that it takes two parameters and returns the
+             sum of the parameters.
+          </p>
+          <br>
+          <p>
+            Returning a value from a function allows us to store that value in a variable.
+              In this example, we invoked the say_hi function and set it to the greeting variable.
+              When we print greeting we see that it contains the returned value of the say_hi function - "Hi'
+          </p>
+          <div class="loop">
+            def sayHi():
+            <br>
+            >>>return "HI"
+            <br>
+            greeting = sayHi()
+            <br>
+            print greeting  ### output will be, HI
+          </div>
+          <p>
+            Going back to our add function, recall that it takes
+            two parameters and returns the sum of the parameters.
+            What do you think the values of sum1, sum2, and sum3 would be?
+          </p>
+          <div class="loop">
+            def math(a, b):
+            <br>
+            >>>x = a + b
+            <br>
+            >>>return x
+            <br>
+            sum1 = math(4, 6)
+            <br>
+            sum2 = math(1, 4)
+            <br>
+            sum3 = sum1 + sum2
+          </div>
+          <p>
+            If you guessed 10, 5, and 15, respectively, good job! sum1 was set to
+            the return value of the add function invoked with 4 and 6 as arguments.
+            Similarly, sum2 was set to the return value of invoking add with 1 and 4.
+            The variable sum3 contains the sum of sum1 and sum2 which is 15. Storing
+            these return values in variables allows us to use the results of our functions
+            throughout the rest of our program.In our examples you may have noticed
+            that our functions were returning values of different data types. Functions
+            can return any of the data types - strings, numbers, lists, tuples, dictionaries
+            and even other functions!
+          </p>
     </div><!--wrapper-->
 </body>
 </html>
