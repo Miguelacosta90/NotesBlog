@@ -9,6 +9,9 @@
   font-size: 30px;
   margin-left: 30%;
 }
+#orderdList{
+  margin-left: 15px;
+}
 .loop{
   background-color: yellow;
   margin-right: 40%;
