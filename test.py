@@ -1,22 +1,24 @@
-class human(object):
-    def __init__(self, clan=None):
-        self.clan = clan
-        self.health = 100
-        self.strangth = 10
-        self.intelligence = 5
-        self.stealth = 5
+class Bike(object):
 
-    def taunt(self):
-        print "this message is for Humans"
+    def __init__(self, price, max_speed):
+        self.price = price
+        self.max_speed = max_speed
+        self.miles = 0
 
-miguel = human("Coding DOJO")
-miguel.taunt()
+    def displayInfo(self):
+        print self.price, self.max_speed, self.miles
+        return self
 
-class test(object):
-    def __init__(self, phrase='nothing was passed'):
-        print "this string will print from phrase" + phrase
-        self.phrase = phrase
-test1 = test("Hello, World")
-test2 = test()
-print "Test 1 has phrase: '" + test1.phrase + "'"
-print "Test 2 has phrase, '" + test2.phrase + "'"
+    def ride(self):
+        self.miles += 10
+        print"Riding", self. miles
+        return self
+
+    def reverse(self):
+        self.miles -= 5
+        print "Reversing", self.miles
+        return self
+
+bike1 = Bike(200, "10mph").reverse().displayInfo().ride()
+bike2 = Bike(300, "15mph").ride().ride().reverse().reverse().displayInfo()
+bike3 = Bike(1000, "30mph").reverse().reverse().reverse().displayInfo()
